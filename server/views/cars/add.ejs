@@ -1,0 +1,31 @@
+<!-----
+Student: Jorge Corichi Herrejon
+File: index.ejs
+Date: 25-10-2022
+Web app: Favorite Cars
+------>
+
+<%- include ../partials/header.ejs %>
+<div class = container>
+        <form method="post">
+            <div class="form-group">
+                <label for="CarName" class="form-control"> Car Name</label>
+                <input id = "carName" name="carName"  type="text" class="form-control" placeholder = "Enter car name">
+            </div>
+            <div class="form-group">
+                <label for="CarModel" class="form-control"> Car Model</label>
+                <input id = "CarModel" name = "CarModel" type="text" class="form-control" placeholder = "Enter car model">
+            </div>
+            <div class="form-group">
+                <label for="Category" class="form-control"> Category</label>
+                <input id = "Category" name = "Category" type="text" class="form-control" placeholder = "Enter car's category">
+            </div>
+            <div class="form-group">
+                <label for="Price" class="form-control"> Price</label>
+                <input id = "Price" name = "Price" type="number" class="form-control" placeholder = "Enter car's price">
+            </div>
+            <button class = "btn btn-primary">Submit</button>
+        </form>
+</div>
+
+<%- include ../partials/footer.ejs %>
